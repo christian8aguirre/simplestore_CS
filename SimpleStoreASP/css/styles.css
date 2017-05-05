@@ -1,0 +1,105 @@
+﻿#wrapper {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#container {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+#content {
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cp-provider {
+    float: left;
+    display: block;
+    width: 75px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    border-radius: 3px;
+    position: relative;
+    transition: all .2s linear;
+    box-shadow: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+    .cp-provider:hover {
+        opacity: 1;
+    }
+
+    .cp-provider.cp-selected {
+        box-shadow: 0 0 6px 3px #00aaef;
+        opacity: 1;
+    }
+
+    .cp-provider img {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        width: 100%;
+    }
+
+.button.expand {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+blockquote {
+    border-left: 0.3rem solid #9B4DCA;
+    background: #F9FAFB;
+    border-top: 1px solid #DEDEDE;
+    border-right: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: monospace;
+}
+
+.pure-img {
+    margin-left: auto;
+    margin-right: auto;
+}

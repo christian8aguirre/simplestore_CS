@@ -1,0 +1,11 @@
+﻿@model SimpleStoreASP.Models.Pelicula
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Pelicula";
+
+}
+<h2>@ViewBag.Title</h2>
+<h4>@Model.Titulo</h4>
+<h5>Duración: @Model.Duracion</h5>
+<h5>Publicación: @Model.Publicacion.ToString("dd/MM/yyy")</h5>
+<h5>Filmado en: @Model.Pais</h5>

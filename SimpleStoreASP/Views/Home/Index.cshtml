@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id= "wrapper">
+	<div id= "container">
+		<div id= "header" class="pure-u-lg-1-4">
+				<img class="pure-img" src="http://demo.compropago.com/list/img/imagotipo.png">
+		        <h2>SIMPLE STORE C#.NET</h2>
+		        <p>Ejemplo Práctico para la generación de una órden de Pago con las librerías de ComproPago.</p>
+		</div>
+		<div id="content">
+            <form class= "pure-form pure-form-aligned">
+            <fieldset>
+                <legend>Datos para generar Orden de Pago</legend>
+				<p><b>Datos Requeridos</b></p>
+					
+				<div class="pure-control-group">
+		            <label for="orderId">Order ID</label>
+		            <input id="orderId" type="text" class="pure-input-2-3">
+					<span id="orderId_sp" class="pure-form-message" style="color:#FF0000"></span>
+		        </div>
+				
+                <div class="pure-control-group">
+                    <label for="orderName">Order name</label>
+                    <input id="orderName" type="text" class="pure-input-2-3">
+					<span id="orderName_sp" class="pure-form-message" style="color:#FF0000"></span>	
+                </div>
+
+				<div class="pure-control-group">
+                    <label for="orderPrice">Order price</label>
+                    <input id="orderPrice" type="text" class="pure-input-2-3" >
+					<span id="orderPrice_sp" class="pure-form-message" style="color:#FF0000"></span>	
+                </div>
+
+				<div class="pure-control-group">
+                    <label for="customerName">Customer name</label>
+                    <input id="customerName" type="text" class="pure-input-2-3">
+					<span id="customerName_sp" class="pure-form-message" style="color:#FF0000"></span>	
+                </div>
+					
+				<div class="pure-control-group">
+                    <label for="customerMail">Customer email</label>
+                    <input id="customerMail" type="text" class="pure-input-2-3">
+					<span id="customerMail_sp" class="pure-form-message" style="color:#FF0000"></span>	
+                </div>
+
+				<div class="pure-control-group">
+                    <label for="customerPhone">Customer phone</label>
+                    <input id="customerPhone" type="text" class="pure-input-2-3">
+					<span id="customerPhone_sp" class="pure-form-message" style="color:#FF0000"></span>	
+                </div>	
+					
+                <p>Datos Opcionales</p>
+
+				<label for="currency">Currency</label>
+		        <select id="currency">
+		            <option>MXN</option>
+		            <option>USD</option>
+		            <option>EUR</option>
+					<option>GBP</option>	
+		        </select>
+				</div>		
+			    <br>
+				<br>
+                <button id = "crearOrden" type="submit" class="button-secondary pure-button">Crear Orden de Pago</button>
+            </fieldset>
+            </form>
+		</div>
+	</div>
+</div>
