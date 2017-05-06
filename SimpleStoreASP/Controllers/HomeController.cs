@@ -7,6 +7,10 @@ using System.Web.Mvc.Ajax;
 using System.Web.UI;
 using System.Web.Script.Serialization;
 using SimpleStoreASP.Services;
+using CompropagoSdk.Factory;
+using CompropagoSdk.Factory.Models;
+using CompropagoSdk;
+using SimpleStoreASP.Models;
 
 namespace SimpleStoreASP.Controllers
 {
@@ -21,7 +25,17 @@ namespace SimpleStoreASP.Controllers
         public ActionResult Pelicula()
         {
             var peliculasServices = new PeliculasServices();
-            var model = peliculasServices.obtenerPelicula();
+            var model = peliculasServices.ObtenerPeliculas();
+
+            var client = new Client(
+                ConfigModel.publicKey,
+                ConfigModel.privateKey,
+                ConfigModel.mode
+            );
+
+            var providers = client.Api.ListProviders();
+
+            ViewData["providers"] = providers;
             return View(model);
         }
     }

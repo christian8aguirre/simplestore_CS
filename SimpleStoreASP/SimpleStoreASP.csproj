@@ -100,6 +100,7 @@
     <Compile Include="CompropagoSdk\Client.cs" />
     <Compile Include="Models\Pelicula.cs" />
     <Compile Include="Services\PeliculasServices.cs" />
+    <Compile Include="Models\ConfigModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

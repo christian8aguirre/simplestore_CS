@@ -1,11 +1,35 @@
-﻿@model SimpleStoreASP.Models.Pelicula
+﻿@model List<SimpleStoreASP.Models.Pelicula>
+
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.Title = "Pelicula";
+    ViewBag.Title = "Peliculas";
 
 }
-<h2>@ViewBag.Title</h2>
-<h4>@Model.Titulo</h4>
-<h5>Duración: @Model.Duracion</h5>
-<h5>Publicación: @Model.Publicacion.ToString("dd/MM/yyy")</h5>
-<h5>Filmado en: @Model.Pais</h5>
+<h1>@ViewBag.Title</h1>
+<br>
+<br>
+<table>
+    <thead>
+        <tr>
+			<th>Titulo:</th>
+			<th>Duracion:</th>
+			<th>Publicación:</th>
+			<th>Filmado en:</th>
+		</tr>
+	</thead>
+    <tbody>
+		@foreach (var pelicula in Model)
+		{
+		  <tr>
+			<td>@pelicula.Titulo</td>
+            <td>@pelicula.Duracion</td>
+			<td>@pelicula.Publicacion.ToString("dd/MM/yyy")</td>
+			<td>@pelicula.Pais</td>
+		</tr>  
+		}
+	</tbody>
+</table>
+
+
+@ViewData["providers"]
+

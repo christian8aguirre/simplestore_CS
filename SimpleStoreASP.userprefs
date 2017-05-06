@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{0B08E642-301F-4DED-8A16-89580EA0CD87}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SimpleStoreASP/Views/Home/Pelicula.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SimpleStoreASP/CompropagoSdk/Service.cs">
     <Files>
-      <File FileName="SimpleStoreASP/Controllers/HomeController.cs" Line="26" Column="10" />
-      <File FileName="SimpleStoreASP/Models/Pelicula.cs" Line="12" Column="1" />
-      <File FileName="SimpleStoreASP/Services/PeliculasServices.cs" Line="13" Column="31" />
-      <File FileName="SimpleStoreASP/Views/Home/Pelicula.cshtml" Line="4" Column="1" />
-      <File FileName="SimpleStoreASP/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="SimpleStoreASP/Controllers/HomeController.cs" Line="38" Column="41" />
+      <File FileName="SimpleStoreASP/Views/Home/Pelicula.cshtml" Line="34" Column="28" />
+      <File FileName="SimpleStoreASP/Services/PeliculasServices.cs" Line="30" Column="63" />
+      <File FileName="SimpleStoreASP/CompropagoSdk/Factory/Models/Provider.cs" Line="15" Column="6" />
+      <File FileName="SimpleStoreASP/CompropagoSdk/Client.cs" Line="28" Column="10" />
+      <File FileName="SimpleStoreASP/CompropagoSdk/Service.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
