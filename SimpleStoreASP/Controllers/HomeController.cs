@@ -14,7 +14,15 @@ using SimpleStoreASP.Models;
 
 namespace SimpleStoreASP.Controllers
 {
-    public class HomeController : Controller
+	public class Usuario
+	{
+		public string Nombre { get; set; }
+		public string Twitter { get; set; }
+		public DateTime Alta { get; set; }
+	}
+
+
+	public class HomeController : Controller
     {
         public ActionResult Index()
         {
@@ -24,19 +32,9 @@ namespace SimpleStoreASP.Controllers
 
         public ActionResult Pelicula()
         {
-            var peliculasServices = new PeliculasServices();
-            var model = peliculasServices.ObtenerPeliculas();
 
-            var client = new Client(
-                ConfigModel.publicKey,
-                ConfigModel.privateKey,
-                ConfigModel.mode
-            );
-
-            var providers = client.Api.ListProviders();
-
-            ViewData["providers"] = providers;
-            return View(model);
+	
+            return View();
         }
     }
 }

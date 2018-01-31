@@ -114,6 +114,8 @@
     <Content Include="css\styles.css" />
     <Content Include="js\javascript.js" />
     <Content Include="Views\Home\Pelicula.cshtml" />
+    <Content Include="Views\Home\Recibo.html" />
+    <Content Include="ABC.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="compropago.json" />
